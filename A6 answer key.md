@@ -4,7 +4,24 @@
 
 ---
 
-## There are two acceptable answers depending on whether you dropped the "u" first time home buyers permanently or not
+## Interpretation of coefficients.
+
+- Model 1: 
+    - When co-borrower credit score rises by 1%, interest rates, all else equal, fall by 1.49 percentage points. 
+    - When the 10 year treasury rate increases by 1, interest rates, all else equal, increase by 0.95 percentage points. 
+    - First time homebuyers, all else equal, pay interest rates that are 0.15 percentage points higher. 
+- Model 2B: 
+    - Beta 0 means: A 1% increase in credit score, all else equal, is associated with interest rates that are 3.84 p.p. higher _**when log(LTV) is zero.**_ 
+    - Beta 2 means, first pass: _A 1% increase in credit score, all else equal, is associated with interest rates that are "2.40 times log(LTV)" percentage points lower._ 
+    - Beta 2 means, second pass: The average log(LTV) is 4.21, so for a loan with average log(LTV), a 1% increase in credit score, all else equal, is associated with interest rates that are 10.1 percentage points lower.
+- Why did the credit score coefficient change so much between 2A and 2B?
+  - In model 2A, the total relationship between credit score and rates is summarized by beta 0. A 1% increase in score is related to a 6.28 p.p. fall in rates.
+  - In model 2B, the total relationship between credit score and rates is summarized by beta 0 + beta 2 * log(LTV). If we take the average log(LTV), then 3.84-2.4*4.21 = a 6.26 p.p. fall in rates.
+  - So: While the coefficient on beta0 changed, the total implied relationship is nearly identical between 2A and 2B! 
+
+## Regression coefficients
+
+There are two acceptable answers depending on whether you dropped the "u" first time home buyers permanently or not
 
 _(I dropped all the coefficients from model 4B to make this table shorter, as they aren't necessary for grading purposes. )_
 
